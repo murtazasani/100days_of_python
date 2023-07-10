@@ -12,8 +12,8 @@ try:
     number2 = input("Enter a Another Number: ")
     number2 = float(number2)
 
-except:
-    print("You have ValueError. \nNote:(ValueError) occur when you entered text but it required Number.")
+except Exception as err:
+    print(err)
     number2 = input("Enter a Another Number: ")
 
 if number1 < number2:
